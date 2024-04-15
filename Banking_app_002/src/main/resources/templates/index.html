@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking App API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #666;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Banking App API Documentation</h1>
+</header>
+<section>
+    <h2>Endpoints</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>HTTP Method</th>
+            <th>Endpoint</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>POST</td>
+            <td>/account/create</td>
+            <td>Create the account</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>/account/{accountNumber}</td>
+            <td>Retrieve account details by account number</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>/account/getallaccounts</td>
+            <td>show all accounts</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>/account/deposit/{accountNumber}/{amount}</td>
+            <td>Deposit amount into account</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>/account/withdrwa/{accountNumber}/{amount}</td>
+            <td>Withdraw amount from account</td>
+        </tr>
+        <tr>
+            <td>DELETE</td>
+            <td>/account/{accountNumber}</td>
+            <td>Delete account</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+</body>
+</html>
